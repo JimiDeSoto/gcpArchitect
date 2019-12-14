@@ -1,0 +1,2 @@
+# gcpArchitect
+szkolenie
