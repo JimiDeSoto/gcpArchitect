@@ -1,0 +1,6 @@
+title: "Role Viewer"
+description: "My custom role description."
+stage: "ALPHA"
+includedPermissions:
+- iam.roles.get
+- iam.roles.list
