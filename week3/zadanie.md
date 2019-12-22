@@ -9,7 +9,7 @@ gsutil cp gs://mountkirk-games-image/mountkirk-games.vmdk gs://ag-week3/
 gcloud compute images import mountkirk-test01 \
 --os=debian-9 \
 --source-file=gs://ag-week3/mountkirk-games.vmdk
-## uruchomienie aplikacji w wybranych regionach
+### uruchomienie aplikacji w wybranych regionach
 gcloud compute instances create vm-mountkirk-euw --zone=europe-west6-a --machine-type=n1-standard-1 --tags=http-server,https-server --image=mountkirk-test01
 
 

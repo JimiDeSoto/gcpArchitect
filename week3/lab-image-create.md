@@ -1,8 +1,8 @@
-## Przygotowanie portal
-# wyklikanie z portalu maszyny wordpres szk1
-# wylikanie backetu storage labimagerk01
+# Przygotowanie portal
+## wyklikanie z portalu maszyny wordpres szk1
+## wylikanie backetu storage labimagerk01
 
-## Tworzenie image z istniejacej maszyny
+# Tworzenie image z istniejacej maszyny
 gcloud compute disks list
 gcloud compute images create my-image --source-disk=szk1-vm --source-disk-zone=us-central1-a
 
