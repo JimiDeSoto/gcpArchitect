@@ -12,7 +12,7 @@ TEXT$=(cat file01.txt | base64 -w0)
 ## uruchomienie usugi KMS
 gcloud services enable cloudkms.googleapis.com
 
-## Utworzenie key ring
+## Utworzenie keyring
 gcloud kms keyrings create mykeyring --location global
 
 ## tworzenie klucza szyfrownia

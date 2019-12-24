@@ -1,0 +1,8 @@
+title: "Crypto Role"
+description: "Dostep do kluczy szyfrowania"
+stage: GA
+includedPermissions:
+- cloudkms.cryptoKeyVersions.useToDecrypt
+- cloudkms.cryptoKeyVersions.useToEncrypt
+- cloudkms.cryptoKeyVersions.viewPublicKey
+

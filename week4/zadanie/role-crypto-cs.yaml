@@ -1,0 +1,10 @@
+title: "Crypto and CS ro Role"
+description: "Dostep do kluczy szyfrowania oraz odczytu CloudStorage"
+stage: GA
+includedPermissions:
+- cloudkms.cryptoKeyVersions.useToDecrypt
+- cloudkms.cryptoKeyVersions.useToEncrypt
+- cloudkms.cryptoKeyVersions.viewPublicKey
+- storage.objects.get
+- storage.objects.list
+
