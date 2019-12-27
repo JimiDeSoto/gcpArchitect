@@ -1,0 +1,22 @@
+Instance Groups Rolling updates
+
+https://cloud.google.com/compute/docs/instance-groups/rolling-out-updates-to-managed-instance-groups
+Create template - template1
+
+gcloud compute instance-templates create template1 \
+    --image-family debian-9 --image-project debian-cloud \
+    --machine-type=f1-micro
+
+Create Managed Instance Group
+gcloud compute instance-groups managed create my-group-1 \
+    --base-instance-name=my-group-1 --template=template1 --size=3 --zone=us-central1-a
+
+Create template - template2
+
+gcloud compute instance-templates create template2 --image-family debian-10\
+    --image-project debian-cloud --machine-type=f1-micro
+
+Update instance group with template2
+
+gcloud compute instance-groups managed rolling-action start-update my-group-1 \
+    --version template=template2 --max-unavailable 2 --zone us-central1-a
