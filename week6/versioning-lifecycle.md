@@ -1,0 +1,28 @@
+## Create JSON file on your computer called lifecycleman.json:
+
+'''
+"lifecycle": {
+"rule": [
+{
+"action": {
+  "type": "SetStorageClass",
+  "storageClass": "NEARLINE"
+},
+"condition": {
+  "age": 365,
+  "matchesStorageClass": ["MULTI_REGIONAL", "STANDARD", "DURABLE_REDUCED_AVAILABILITY"]
+}
+},
+{
+"action": {
+  "type": "SetStorageClass",
+  "storageClass": "COLDLINE"
+},
+"condition": {
+  "age": 1095,
+  "matchesStorageClass": ["NEARLINE"]
+}
+}
+]
+}
+}```
