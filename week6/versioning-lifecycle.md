@@ -1,28 +1,45 @@
 ## Create JSON file on your computer called lifecycleman.json:
 
-'''
+{
 "lifecycle": {
-"rule": [
+    "rule": [
+    {
+    "action": {"type": "Delete"},
+    "condition": {
+      "age": 30,
+      "isLive": true
+    }
+    },
+    {
+    "action": {"type": "Delete"},
+    "condition": {
+      "age": 10,
+      "isLive": false
+    }
+    }
+    ]
+    }
+}   
+
 {
-"action": {
-  "type": "SetStorageClass",
-  "storageClass": "NEARLINE"
-},
-"condition": {
-  "age": 365,
-  "matchesStorageClass": ["MULTI_REGIONAL", "STANDARD", "DURABLE_REDUCED_AVAILABILITY"]
-}
-},
-{
-"action": {
-  "type": "SetStorageClass",
-  "storageClass": "COLDLINE"
-},
-"condition": {
-  "age": 1095,
-  "matchesStorageClass": ["NEARLINE"]
-}
-}
-]
-}
-}```
+"lifecycle": {
+    "rule": [
+    {
+    "action": {"type": "Delete"},
+    "condition": {
+      "age": 30,
+      "isLive": true
+    }
+    },
+    {
+    "action": {"type": "Delete"},
+    "condition": {
+      "age": 10,
+      "isLive": false
+    }
+    }
+    ]
+    }
+}   
+
+## aplikacja 
