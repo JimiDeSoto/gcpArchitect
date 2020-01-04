@@ -1,0 +1,40 @@
+{
+    "lifecycle":
+    {
+        "rule": 
+    [
+        {
+            "action": {
+                "type": "SetStorageClass",
+                "storageClass": "NEARLINE"
+            },
+
+            "condition": {
+                "age": 60,
+                "matchesStorageClass": ["MULTI_REGIONAL", "STANDARD", "DURABLE_REDUCED_AVAILABILITY"]
+            }
+        },
+
+        {
+            "action": {
+                "type": "Delete"
+            },
+            "condition": {
+                  "age": 90,
+                  "isLive": true
+            }
+        },
+
+        {
+            "action": {
+                "type": "Delete"
+            },
+            "condition": {
+                  "age": 10,
+                  "isLive": false
+            }
+        }
+                    
+    ]
+    }
+}
