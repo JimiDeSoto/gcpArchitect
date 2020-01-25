@@ -194,8 +194,7 @@ rtt min/avg/max/mdev = 106.293/106.293/106.293/0.000 ms
 ```
 Architektura:
 
-![](D:\Users\Robert\OneDrive - overseer.pl\50 - Szkolenia\11 - GCP Architekt\2 - tygodnie\9 - tydzien9\zadanie\img\peering.png)
-
+![Alt text](https://github.com/JimiDeSoto/gcpArchitect/blob/master/week9/zadanie/peering.png)
 
 
 ##### 3. Jak zbudujesz połączenie pomiędzy sieciami tak, aby umożliwić dotarcie z Projektu B do świata zewnętrznego wychodząc przez urządzenie wirtualne w Projekcie A?
@@ -204,7 +203,7 @@ Modyfikacja routingu.
 
 #### Zadanie 2. Przygotowaliśmy pewną architekturę, której schemat jest już gotowy, lecz brakuje realizacji.
 
-![](D:\Users\Robert\OneDrive - overseer.pl\50 - Szkolenia\11 - GCP Architekt\2 - tygodnie\9 - tydzien9\zadanie\img\schemat.png)
+![Alt text](https://github.com/JimiDeSoto/gcpArchitect/blob/master/week9/zadanie/schemat.png)
 
 
 
